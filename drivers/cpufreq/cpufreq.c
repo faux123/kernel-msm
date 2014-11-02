@@ -636,14 +636,6 @@ cpufreq_freq_attr_ro(related_cpus);
 cpufreq_freq_attr_ro(affected_cpus);
 cpufreq_freq_attr_ro(cpu_utilization);
 cpufreq_freq_attr_rw(scaling_min_freq);
-#endif
-#else
-#ifdef CONFIG_ARCH_MSM8226
-cpufreq_freq_attr_ro(scaling_min_freq);
-#else
-cpufreq_freq_attr_rw(scaling_min_freq);
-#endif
-#endif
 
 #ifdef CONFIG_CPU_VOLTAGE_TABLE
 cpufreq_freq_attr_rw(UV_mV_table);
